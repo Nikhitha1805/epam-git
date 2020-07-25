@@ -1,0 +1,155 @@
+http://tutorials.jenkov.com/maven/maven-tutorial.html, https://www.tutorialspoint.com/maven/index.htm
+
+
+Webinar Recording 2- https://attendee.gotowebinar.com/recording/4137623188555522312
+Likitha@21
+Teju@1999
+
+buddy Teju@12
+
+
+
+
+Lenovo@DESKTOP-4J9KALN MINGW64 ~
+$ cd
+
+Lenovo@DESKTOP-4J9KALN MINGW64 ~
+$ cd /c
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c
+$ ls
+'$Recycle.Bin'/             git/             'Program Files (x86)'/
+ Boot/                      hiberfil.sys      ProgramData/
+ bootmgr                    Intel/            Recovery/
+ BOOTNXT                    KMPlayer/         swapfile.sys
+ BOOTSECT.BAK               MSOCache/        'System Volume Information'/
+ csvpandas/                 pagefile.sys      Users/
+ Dataset/                   PerfLogs/         Windows/
+'Documents and Settings'@  'Program Files'/   xampp/
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c
+$ cd git/
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git
+$ ls
+gittest/  gittesting/
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git
+$ git config --global user.name "L-tej"
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git
+$ git config --global user.email tejaswini.l.2000@gmail.com
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git
+$ git clone https://github.com/L-tej/gittesting.git
+Cloning into 'gittesting'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 602 bytes | 2.00 KiB/s, done.
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git
+$ ls
+gittest/  gittesting/
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git
+$ cd gittesting/
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ ls
+README.md
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ ls
+newtext.txt  README.md
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git add newtext.txt
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   newtext.txt
+
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git commit -m "first commit"newtext.txt
+[master 484d611] first commitnewtext.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newtext.txt
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/L-tej/gittesting.git/'
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/L-tej/gittesting.git
+   3b26f39..484d611  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newtext.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git commit -m "second commit"newtext.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   newtext.txt
+
+no changes added to commit
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newtext.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git commit -m "second commit"newtext.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   newtext.txt
+
+no changes added to commit
+
+Lenovo@DESKTOP-4J9KALN MINGW64 /c/git/gittesting (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
